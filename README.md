@@ -56,7 +56,7 @@ Let's plot our clusters.
 
 Next we need to calculate the distances and choose a threshold. We assume that 13% of the entire data set are anomalies. As the threshold we will take the minimum of the largest 13% of the distances.
 
-<img src="img/k-distance_calc.png" width="800"/>
+<img src="img/distance_calc.png" width="800"/>
 
 Now we can plot K-Means anomalies.
 
