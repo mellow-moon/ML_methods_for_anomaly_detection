@@ -60,7 +60,7 @@ Next we need to calculate the distances and choose a threshold. We assume that 1
 
 Now we can plot K-Means anomalies.
 
-<img src="img/k-kmmeans_anomaly_plot.png" width="800"/>
+<img src="img/kmmeans_anomaly_plot.png" width="800"/>
 
 # Model-2 - Isolation Forest
 
