@@ -63,3 +63,115 @@ Now we can plot K-Means anomalies.
 <img src="img/k-kmmeans_anomaly_plot.png" width="800"/>
 
 # Model-2 - Isolation Forest
+
+Isolation Forest will mark our data as normal and anomaly. Let's see the output prediction of a model (1:normal, -1:anomaly).
+
+<img src="img/if_model.png" width="800"/>
+
+Let's plot Isolation Forest anomalies.
+
+<img src="img/if_anomaly_plot.png" width="800"/>
+
+# Model 3 - One Class SVM
+
+We will use One Class SVM with parameters: kernel = 'rbf', gamma = 0.001, nu = 0.13. Let's see the output prediction of a model (1:normal, -1:anomaly).
+
+<img src="img/svm_model.png" width="800"/>
+
+Let's plot One Class SVM anomalies.
+
+<img src="img/svm_anomaly_plot.png" width="800"/>
+
+# Model 4 - LOF
+
+We will use LocalOutlierFactor with parameters: n_neighbors = 50, metric = 'manhattan', contamination = 0.13. Let's see the output prediction of a model (1:normal, -1:anomaly).
+
+<img src="img/lof_model.png" width="800"/>
+
+Let's plot LOF anomalies.
+
+<img src="img/lof_anomaly_plot.png" width="800"/>
+
+# Models evaluation
+
+Next we will calculate some metrics to see how well the models work. We will calculate precision, recall, f1-score, AUC for every model and plot a Confusion Matrix.
+
+# K-Means
+
+# Classification Report
+
+<img src="img/k-means_report.png" width="800"/>
+
+# Confusion Matrix
+
+<img src="img/k-means_confusion_matrix.png" width="800"/>
+
+# Roc Curve
+
+<img src="img/k-means_auc.png" width="800"/>
+
+# Isolation Forest
+
+# Classification Report
+
+<img src="img/if_report.png" width="800"/>
+
+# Confusion Matrix
+
+<img src="img/if_confusion_matrix.png" width="800"/>
+
+# Roc Curve
+
+<img src="img/if_roc_auc.png" width="800"/>
+
+# One Class SVM
+
+# Classification Report
+
+<img src="img/one_clss_svm_report.png" width="800"/>
+
+# Confusion Matrix
+
+<img src="img/one_clss_svm_confusion_matrix.png" width="800"/>
+
+# Roc Curve
+
+<img src="img/one_clss_svm_roc_auc.png" width="800"/>
+
+# LOF
+
+# Classification Report
+
+<img src="img/lof_report.png" width="800"/>
+
+# Confusion Matrix
+
+<img src="img/lof_confusion_matrix.png" width="800"/>
+
+# Roc Curve
+
+<img src="img/lof_roc_auc.png" width="800"/>
+
+# Hyperparameter tuning
+
+As we can see LOF AUC = 0.67. Let's try to increase LOF value. We will try to train LOF models with different parameters to find best model.
+
+<img src="img/lof_tuning_parameters.png" width="800"/>
+
+Let's calculate precission, recall, f1-score, ROC AUC score and make a dataframe with parameters and metrics.
+
+<img src="img/lof_best_model_calc.png" width="800"/>
+
+# Classification Report for best LOF
+
+<img src="img/lof_best_report.png" width="800"/>
+
+# Confusion Matrix for best LOF
+
+<img src="img/lof_best_confusion_matrix.png" width="800"/>
+
+# Roc Curve for best LOF
+
+<img src="img/lof_best_roc_auc.png" width="800"/>
+
+LOF value increased from 0.67 to 0.69.
